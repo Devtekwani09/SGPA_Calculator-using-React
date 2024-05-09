@@ -10,7 +10,7 @@ import Third from './pages/Third';
 
 function App() {
   return (
-    <div>
+    <div className='bg-[#141619]'>
       <Navbar />
 
       <Routes>

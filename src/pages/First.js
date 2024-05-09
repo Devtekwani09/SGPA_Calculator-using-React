@@ -343,7 +343,7 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <button className='w-[5vw] bg-[#3a304a] self-center h-[5vh] rounded-md hover:bg-[#292136] text-white'>Submit</button>
+                <button className='p-3 bg-[#3a304a] self-center rounded-md hover:bg-[#292136] text-white'>Submit</button>
 
             </form>
 
