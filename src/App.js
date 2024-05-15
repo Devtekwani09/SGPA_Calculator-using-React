@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import First from './pages/First';
 import Fifth from './pages/Fifth';
 import Third from './pages/Third';
+import Fourth from './pages/Fourth';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/ai' element={<Ai />} />
         <Route path='/ai/first' element={<First />} />
         <Route path='/ai/third' element={<Third />} />
+        <Route path='/ai/fourth' element={<Fourth />} />
         <Route path='/ai/fifth' element={<Fifth />} />
       </Routes>
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const Fifth = () => {
-    const [formdata, setFormData] = useState({ aem: "", tcmefa:"", de:"", dsa:"", oop:"", se:"", dsalab:"", ooplab:"", selab:"", delab:"", its:"", deca:"" });
+const Fourth = () => {
+    const [formdata, setFormData] = useState({ dms: "", mefatc:"", mpi:"", dbms:"", toc:"", dccn:"", mpilab:"", dbmslab:"", nplab:"", linuxlab:"", javalab:"", deca:"" });
 
     // Function to handle changes in the select dropdown
     const changeHandler = (event) => {
@@ -37,25 +37,25 @@ const Fifth = () => {
                 'subject4': 3.0,
                 'subject5': 3.0,
                 'subject6': 3.0,
-                'subject7': 1.5,
+                'subject7': 1.0,
                 'subject8': 1.5,
                 'subject9': 1.5,
-                'subject10': 1.5,
+                'subject10': 1.0,
                 'subject11': 1.0,
                 'subject12': 0.5,
             };
 
-            var subject1Grade = gradeMap[formdata.aem];
-            var subject2Grade = gradeMap[formdata.tcmefa];
-            var subject3Grade = gradeMap[formdata.de];
-            var subject4Grade = gradeMap[formdata.dsa];
-            var subject5Grade = gradeMap[formdata.oop];
-            var subject6Grade = gradeMap[formdata.se];
-            var subject7Grade = gradeMap[formdata.dsalab];
-            var subject8Grade = gradeMap[formdata.ooplab];
-            var subject9Grade = gradeMap[formdata.selab];
-            var subject10Grade = gradeMap[formdata.delab];
-            var subject11Grade = gradeMap[formdata.its];
+            var subject1Grade = gradeMap[formdata.dms];
+            var subject2Grade = gradeMap[formdata.mefatc];
+            var subject3Grade = gradeMap[formdata.mpi];
+            var subject4Grade = gradeMap[formdata.dbms];
+            var subject5Grade = gradeMap[formdata.toc];
+            var subject6Grade = gradeMap[formdata.dccn];
+            var subject7Grade = gradeMap[formdata.mpilab];
+            var subject8Grade = gradeMap[formdata.dbmslab];
+            var subject9Grade = gradeMap[formdata.nplab];
+            var subject10Grade = gradeMap[formdata.linuxlab];
+            var subject11Grade = gradeMap[formdata.javalab];
             var subject12Grade = gradeMap[formdata.deca];
 
             
@@ -76,7 +76,7 @@ const Fifth = () => {
             var totalCreditHours = creditHours['subject1'] + creditHours['subject2'] + creditHours['subject3'] + creditHours['subject4'] + creditHours['subject5'] + creditHours['subject6'] + creditHours['subject7'] + creditHours['subject8'] + creditHours['subject9'] + creditHours['subject10'] + creditHours['subject11'] + creditHours['subject12'];
 
             var sgpa = totalGradePoints / totalCreditHours;
-
+            
 
             setSgpa(sgpa);
 
@@ -85,16 +85,16 @@ const Fifth = () => {
 
     return (
         <div className="flex flex-col justify-center items-center">
-        <h1 className='text-lg font-bold text-white'> Semester - 5 </h1>
+        <h1 className='text-lg font-bold text-white'> Semester - 4 </h1>
         <div>
             <form className="flex flex-col w-full max-w-md p-5 bg-[#972fff] mt-3 gap-2 rounded-md" onSubmit={submitHandler}>
-                <label htmlFor="aem" className="self-start">Advanced Engineering Mathematics : </label>
+                <label htmlFor="dms" className="self-start">Discrete Mathematics Structure  : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="aem"
+                    name="dms"
                     onChange={changeHandler}
-                    value={formdata.aem}
-                    id="aem"
+                    value={formdata.dms}
+                    id="dms"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -111,13 +111,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="tcmefa" className="self-start">Technical Communication / Managerial Economics and Financial Accounting : </label>
+                <label htmlFor="mefatc" className="self-start">Managerial Economics and Financial Accounting / Technical Communication :  </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="tcmefa"
+                    name="mefatc"
                     onChange={changeHandler}
-                    value={formdata.tcmefa}
-                    id="tcmefa"
+                    value={formdata.mefatc}
+                    id="mefatc"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -134,13 +134,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="de" className="self-start">Digital Electronics : </label>
+                <label htmlFor="mpi" className="self-start">Microprocessor & Interfaces : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="de"
+                    name="mpi"
                     onChange={changeHandler}
-                    value={formdata.de}
-                    id="de"
+                    value={formdata.mpi}
+                    id="mpi"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -157,13 +157,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="dsa" className="self-start">Data Structures and Algorithms : </label>
+                <label htmlFor="dbms" className="self-start">Database Management System  : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="dsa"
+                    name="dbms"
                     onChange={changeHandler}
-                    value={formdata.dsa}
-                    id="dsa"
+                    value={formdata.dbms}
+                    id="dbms"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -180,13 +180,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="oop" className="self-start">Object Oriented Programming : </label>
+                <label htmlFor="toc" className="self-start">Theory of Computation : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="oop"
+                    name="toc"
                     onChange={changeHandler}
-                    value={formdata.oop}
-                    id="oop"
+                    value={formdata.toc}
+                    id="toc"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -203,13 +203,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="se" className="self-start">Software Engineering : </label>
+                <label htmlFor="dccn" className="self-start">Data Communication and Computer Networks : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="se"
+                    name="dccn"
                     onChange={changeHandler}
-                    value={formdata.se}
-                    id="se"
+                    value={formdata.dccn}
+                    id="dccn"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -228,13 +228,13 @@ const Fifth = () => {
 
                 <h1> Practicals </h1>
 
-                <label htmlFor="dsalab" className="self-start">Data Structures and Algorithms Lab : </label>
+                <label htmlFor="mpilab" className="self-start">Microprocessor & Interfaces Lab : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="dsalab"
+                    name="mpilab"
                     onChange={changeHandler}
-                    value={formdata.dsalab}
-                    id="dsalab"
+                    value={formdata.mpilab}
+                    id="mpilab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -251,13 +251,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="ooplab" className="self-start">Object Oriented Programming Lab :</label>
+                <label htmlFor="dbmslab" className="self-start">Database Management System Lab  :</label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="ooplab"
+                    name="dbmslab"
                     onChange={changeHandler}
-                    value={formdata.ooplab}
-                    id="ooplab"
+                    value={formdata.dbmslab}
+                    id="dbmslab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -274,13 +274,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="selab" className="self-start">Software Engineering Lab : </label>
+                <label htmlFor="nplab" className="self-start">Network Programming Lab  : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="selab"
+                    name="nplab"
                     onChange={changeHandler}
-                    value={formdata.selab}
-                    id="selab"
+                    value={formdata.nplab}
+                    id="nplab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -297,13 +297,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="delab" className="self-start">Digital Electronics Lab : </label>
+                <label htmlFor="linuxlab" className="self-start">Linux Shell Programming Lab : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="delab"
+                    name="linuxlab"
                     onChange={changeHandler}
-                    value={formdata.delab}
-                    id="delab"
+                    value={formdata.linuxlab}
+                    id="linuxlab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -320,13 +320,13 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="its" className="self-start">Industrial Training : </label>
+                <label htmlFor="javalab" className="self-start">Java Lab : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="its"
+                    name="javalab"
                     onChange={changeHandler}
-                    value={formdata.its}
-                    id="its"
+                    value={formdata.javalab}
+                    id="javalab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -378,4 +378,4 @@ const Fifth = () => {
     );
 }
 
-export default Fifth;
+export default Fourth;

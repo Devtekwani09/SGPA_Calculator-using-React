@@ -344,7 +344,7 @@ const Fifth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="dmct" className="self-start">DECA : </label>
+                <label htmlFor="deca" className="self-start">DECA : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
                     name="deca"

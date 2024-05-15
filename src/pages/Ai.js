@@ -26,7 +26,7 @@ const Ai = () => {
                 3rd
             </div>
             </Link>
-            <Link to="#">
+            <Link to="/ai/fourth">
             <div className="w-[25vw] h-10  text-white rounded-md m-4 p-2  bg-[#09154d] hover:bg-[#050A44] ">
                 4th
             </div>
