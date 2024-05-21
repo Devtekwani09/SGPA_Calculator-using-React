@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { SiLinktree } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -13,14 +14,19 @@ const Footer = () => {
       <div className="container flex justify-evenly items-center text-cyan-300">
         <span className="text-muted">Designed and Developed by - Dev Tekwani</span>
         <ul className='flex gap-x-4'>
+        <li>
+          <a href="https://linkedin.com/in/dev-tekwani-3b5b74220" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+        </li>
           <li>
-            <a href=''>
-              <FaLinkedin />
+            <a href="https://github.com/Devtekwani09" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
             </a>
           </li>
           <li>
-            <a href=''>
-              <FaGithub />
+            <a href="https://linktr.ee/dev_09" target="_blank" rel="noopener noreferrer">
+              <SiLinktree />
             </a>
           </li>
           
