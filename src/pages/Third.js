@@ -26,7 +26,7 @@ const Fifth = () => {
                 'D+': 6.0,
                 'D': 5.5,
                 'E+': 5.0,
-                'E': 5.0,
+                'E': 4.0,
                 'F': 0.0
             };
 
@@ -85,7 +85,7 @@ const Fifth = () => {
 
     return (
         <div className="flex flex-col justify-center items-center">
-        <h1 className='text-lg font-bold text-white'> Semester - 5 </h1>
+        <h1 className='text-lg font-bold text-white'> Semester - 3 </h1>
         <div>
             <form className="flex flex-col w-full max-w-md p-5 bg-[#972fff] mt-3 gap-2 rounded-md" onSubmit={submitHandler}>
                 <label htmlFor="aem" className="self-start">Advanced Engineering Mathematics : </label>
@@ -107,6 +107,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -130,6 +131,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -153,6 +155,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -176,6 +179,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -199,6 +203,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -222,6 +227,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -247,6 +253,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -271,6 +278,7 @@ const Fifth = () => {
                     <option value="D+">D+</option>
                     <option value="D">D</option>
                     <option value="E">E</option>
+                    <option value="E+">E+</option>
                     <option value="F">F</option>
                 </select>
 
@@ -293,6 +301,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -316,6 +325,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -339,6 +349,7 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -362,11 +373,12 @@ const Fifth = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
 
-                <button className='w-[5vw] bg-[#3a304a] self-center h-[5vh] rounded-md hover:bg-[#292136] text-white'>Submit</button>
+                <button className='w-full bg-[#3a304a] self-center h-[5vh] rounded-md hover:bg-[#292136] text-white'>Submit</button>
 
             </form>
 
