@@ -232,7 +232,7 @@ const Sixth = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="opt" className="self-start">optional : </label>
+                <label htmlFor="opt" className="self-start">NLP / ANN / Distributed System / Software Defined Network / Ecommerce and ERP : </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
                     name="opt"

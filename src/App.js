@@ -9,6 +9,7 @@ import Fifth from './pages/Fifth';
 import Third from './pages/Third';
 import Fourth from './pages/Fourth';
 import Sixth from './pages/Sixth';
+import Seven from './pages/seven'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/ai/fourth' element={<Fourth />} />
         <Route path='/ai/fifth' element={<Fifth />} />
         <Route path='/ai/sixth' element={<Sixth />} />
+        {/* <Route path='/ai/seventh' element={<Seven />} /> */}
       </Routes>
 
       <Footer />

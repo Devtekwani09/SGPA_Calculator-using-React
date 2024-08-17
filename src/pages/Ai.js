@@ -41,12 +41,12 @@ const Ai = () => {
                 6th
             </div>
             </Link>
-            <Link to="#">
+            <Link to="/ai/seventh">
             <div className="w-[25vw] h-10  text-white rounded-md m-4 p-2  bg-[#09154d] hover:bg-[#050A44] ">
                 7th
             </div>
             </Link>
-            <Link to="#">
+            <Link to="/ai/eight">
             <div className="w-[25vw] h-10  text-white rounded-md m-4 p-2  bg-[#09154d] hover:bg-[#050A44] ">
                 8th
             </div>
