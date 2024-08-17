@@ -11,7 +11,7 @@ const Footer = () => {
     // </div>
 
     <footer className="footer mt-auto py-3 bg-[#050a44]">
-      <div className="container flex justify-evenly items-center text-cyan-300">
+      <div className="container flex flex-wrap justify-evenly items-center text-cyan-300">
         <span className="text-muted">Designed and Developed by - Dev Tekwani</span>
         <ul className='flex gap-x-4'>
         <li>

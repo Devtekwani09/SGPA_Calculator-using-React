@@ -105,6 +105,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -128,6 +129,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -151,6 +153,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -174,6 +177,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -197,6 +201,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -222,6 +227,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -247,6 +253,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -270,6 +277,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -293,6 +301,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -316,6 +325,7 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
@@ -339,11 +349,12 @@ const First = () => {
                     <option value="C">C</option>
                     <option value="D+">D+</option>
                     <option value="D">D</option>
+                    <option value="E+">E+</option>
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
 
-                <button className='p-3 bg-[#3a304a] self-center rounded-md hover:bg-[#292136] text-white'>Submit</button>
+                <button className='p-3 bg-[#3a304a] self-center rounded-md hover:bg-[#292136] text-white w-[35vw]'>Submit</button>
 
             </form>
 

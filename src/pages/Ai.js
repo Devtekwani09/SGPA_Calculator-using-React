@@ -5,18 +5,18 @@ import { Link, } from 'react-router-dom'
 const Ai = () => {
   return (
     <div>
-    <div className='flex flex-col justify-center items-center w-[100vw] h-[90vh]'>
+    <div className='flex flex-col justify-center items-center w-11/12 mx-auto md:h-[89vh]'>
 
-        <div className='bg-[#B3B4Bd] h-3 w-[60vw] mb-10 rounded-md mt-10'>
+        <div className=' mt-5 bg-[#B3B4Bd] h-3 w-[60vw] mb-10 rounded-md'>
         </div>
-        
+
         <div className='flex w-[60vw] bg-[#0A21C0] flex-row gap-3 flex-wrap justify-evenly text-center mb-10'>
             <div className='w-[100vw] text-center'>
             <h1 className='text-2xl text-white mt-2'>Choose Semester</h1>
             </div>
             
             <Link to="/ai/first">
-            <div className="w-[56vw] h-10  text-white rounded-md m-4 p-2  bg-[#09154d] hover:bg-[#050A44]  ">
+            <div className="md:w-[56vw] w-[25vw] h-10  text-white rounded-md m-4 p-2  bg-[#09154d] hover:bg-[#050A44]  ">
                 First Year
             </div>
             </Link>
