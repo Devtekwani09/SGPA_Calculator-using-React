@@ -77,9 +77,9 @@ const Fifth = () => {
             var totalCreditHours = creditHours['subject1'] + creditHours['subject2'] + creditHours['subject3'] + creditHours['subject4'] + creditHours['subject5'] + creditHours['subject6'] + creditHours['subject7'] + creditHours['subject8'] + creditHours['subject9'] + creditHours['subject10'] + creditHours['subject11'] + creditHours['subject12'];
 
             var sgpa = totalGradePoints / totalCreditHours;
-
-
-            setSgpa(sgpa);
+            var finalsgpa = Number(sgpa.toFixed(2));
+            
+            setSgpa(finalsgpa);
 
            
     }

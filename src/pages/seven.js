@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const First = () => {
-    const [formdata, setFormData] = useState({ maths: "", phyche:"", cshv:"", ppsbme:"", beebce:"", phychelab:"", lhvlab:"", cpmplab:"", beebcelab:"", caegcamdlab:"", deca:"" });
+    const [formdata, setFormData] = useState({dla: "", eedm : "", dlalab:"", cvlab:"", its: "", ts:"", deca: ""});
 
     // Function to handle changes in the select dropdown
     const changeHandler = (event) => {
@@ -32,30 +32,23 @@ const First = () => {
             };
 
             var creditHours = {
-                'subject1': 4.0,
-                'subject2': 4.0,
+                'subject1': 3.0,
+                'subject2': 3.0,
                 'subject3': 2.0,
                 'subject4': 2.0,
-                'subject5': 2.0,
-                'subject6': 1.0,
-                'subject7': 1.0,
-                'subject8': 1.5,
-                'subject9': 1.0,
-                'subject10': 1.5,
-                'subject11': 0.5,
+                'subject5': 2.5,
+                'subject6': 2.0,
+                'subject7': 0.5,
+                
             };
 
-            var subject1Grade = gradeMap[formdata.maths];
-            var subject2Grade = gradeMap[formdata.phyche];
-            var subject3Grade = gradeMap[formdata.cshv];
-            var subject4Grade = gradeMap[formdata.ppsbme];
-            var subject5Grade = gradeMap[formdata.beebce];
-            var subject6Grade = gradeMap[formdata.phychelab];
-            var subject7Grade = gradeMap[formdata.lhvlab];
-            var subject8Grade = gradeMap[formdata.cpmplab];
-            var subject9Grade = gradeMap[formdata.beebcelab];
-            var subject10Grade = gradeMap[formdata.caegcamdlab];
-            var subject11Grade = gradeMap[formdata.deca];
+            var subject1Grade = gradeMap[formdata.dla];
+            var subject2Grade = gradeMap[formdata.eedm];
+            var subject3Grade = gradeMap[formdata.dlalab];
+            var subject4Grade = gradeMap[formdata.cvlab];
+            var subject5Grade = gradeMap[formdata.its];
+            var subject6Grade = gradeMap[formdata.ts];
+            var subject7Grade = gradeMap[formdata.deca];
 
             
 
@@ -65,34 +58,31 @@ const First = () => {
                                    subject4Grade * creditHours['subject4'] +
                                    subject5Grade * creditHours['subject5'] +
                                    subject6Grade * creditHours['subject6'] +
-                                   subject7Grade * creditHours['subject7'] +
-                                   subject8Grade * creditHours['subject8'] +
-                                   subject9Grade * creditHours['subject9'] +
-                                   subject10Grade * creditHours['subject10'] +
-                                   subject11Grade * creditHours['subject11'] ;
+                                   subject7Grade * creditHours['subject7'] ;
 
-            var totalCreditHours = creditHours['subject1'] + creditHours['subject2'] + creditHours['subject3'] + creditHours['subject4'] + creditHours['subject5'] + creditHours['subject6'] + creditHours['subject7'] + creditHours['subject8'] + creditHours['subject9'] + creditHours['subject10'] + creditHours['subject11'];
+            var totalCreditHours = creditHours['subject1'] + creditHours['subject2'] + creditHours['subject3'] + creditHours['subject4'] + creditHours['subject5'] + creditHours['subject6'] + creditHours['subject7'];
 
             var sgpa = totalGradePoints / totalCreditHours;
+            var finalsgpa = Number(sgpa.toFixed(2));
 
 
-            setSgpa(sgpa);
+            setSgpa(finalsgpa);
 
            
     }
 
     return (
-        <div className="flex flex-col justify-center items-center">
-        <h1 className='text-lg font-bold text-white'> First Year </h1>
+        <div className="flex flex-col justify-center items-center ">
+        <h1 className='text-lg font-bold text-white'> Semester - 7 / 8 </h1>
         <div>
             <form className="flex flex-col w-full max-w-md p-5 bg-[#972fff] mt-3 gap-2 rounded-md" onSubmit={submitHandler}>
-                <label htmlFor="maths" className="self-start">Engineering Mathematics-I / Engineering Mathematics-II </label>
+                <label htmlFor="dla" className="self-start">Deep Learning and Its Applications / Big Data Analytics / IOT </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="maths"
+                    name="dla"
                     onChange={changeHandler}
-                    value={formdata.maths}
-                    id="maths"
+                    value={formdata.dla}
+                    id="dla"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -110,85 +100,13 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="phyche" className="self-start">Engineering Physics / Engineering Chemistry : </label>
+                <label htmlFor="eedm" className="self-start">Environmental Engineering and Disaster Management </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="phyche"
+                    name="eedm"
                     onChange={changeHandler}
-                    value={formdata.phyche}
-                    id="phyche"
-                    required
-                >
-                    <option value="">Open this select menu</option>
-                    <option value="A++">A++</option>
-                    <option value="A+">A+</option>
-                    <option value="A">A</option>
-                    <option value="B+">B+</option>
-                    <option value="B">B</option>
-                    <option value="C+">C+</option>
-                    <option value="C">C</option>
-                    <option value="D+">D+</option>
-                    <option value="D">D</option>
-                    <option value="E+">E+</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                </select>
-
-                <label htmlFor="cshv" className="self-start">Communication Skills / Human Values : </label>
-                <select
-                    className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="cshv"
-                    onChange={changeHandler}
-                    value={formdata.cshv}
-                    id="cshv"
-                    required
-                >
-                    <option value="">Open this select menu</option>
-                    <option value="A++">A++</option>
-                    <option value="A+">A+</option>
-                    <option value="A">A</option>
-                    <option value="B+">B+</option>
-                    <option value="B">B</option>
-                    <option value="C+">C+</option>
-                    <option value="C">C</option>
-                    <option value="D+">D+</option>
-                    <option value="D">D</option>
-                    <option value="E+">E+</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                </select>
-
-                <label htmlFor="ppsbme" className="self-start">Programming for Problem Solving / Basic Mechanical Engineering : </label>
-                <select
-                    className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="ppsbme"
-                    onChange={changeHandler}
-                    value={formdata.ppsbme}
-                    id="ppsbme"
-                    required
-                >
-                    <option value="">Open this select menu</option>
-                    <option value="A++">A++</option>
-                    <option value="A+">A+</option>
-                    <option value="A">A</option>
-                    <option value="B+">B+</option>
-                    <option value="B">B</option>
-                    <option value="C+">C+</option>
-                    <option value="C">C</option>
-                    <option value="D+">D+</option>
-                    <option value="D">D</option>
-                    <option value="E+">E+</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                </select>
-
-                <label htmlFor="beebce" className="self-start">Basic Electrical Engineering / Basic Civil Engineering :  </label>
-                <select
-                    className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="beebce"
-                    onChange={changeHandler}
-                    value={formdata.beebce}
-                    id="beebce"
+                    value={formdata.eedm}
+                    id="eedm"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -208,13 +126,13 @@ const First = () => {
 
                 <h1> Practicals </h1>
 
-                <label htmlFor="phychelab" className="self-start">Engineering Physics Lab / Engineering Chemistry Lab : </label>
+                <label htmlFor="dlalab" className="self-start">DLA LAb / BDA Lab </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="phychelab"
+                    name="dlalab"
                     onChange={changeHandler}
-                    value={formdata.phychelab}
-                    id="phychelab"
+                    value={formdata.dlalab}
+                    id="dlalab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -232,15 +150,13 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                
-
-                <label htmlFor="lhvlab" className="self-start">Language Lab / Human Values Activities and Sports : </label>
+                <label htmlFor="cvlab" className="self-start">CV lab / R-Prog Lab  </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="lhvlab"
+                    name="cvlab"
                     onChange={changeHandler}
-                    value={formdata.lhvlab}
-                    id="lhvlab"
+                    value={formdata.cvlab}
+                    id="cvlab"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -258,13 +174,13 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="cpmplab" className="self-start">Computer Programming Lab / Manufacturing Practices Workshop : </label>
+                <label htmlFor="its" className="self-start">Industrial Training </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="cpmplab"
+                    name="its"
                     onChange={changeHandler}
-                    value={formdata.cpmplab}
-                    id="cpmplab"
+                    value={formdata.its}
+                    id="its"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -282,13 +198,13 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="beebcelab" className="self-start">Basic Electrical Engineering Lab / Basic Civil Engineering Lab : </label>
+                <label htmlFor="ts" className="self-start">Seminar </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="beebcelab"
+                    name="ts"
                     onChange={changeHandler}
-                    value={formdata.beebcelab}
-                    id="beebcelab"
+                    value={formdata.ts}
+                    id="ts"
                     required
                 >
                     <option value="">Open this select menu</option>
@@ -306,31 +222,7 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="caegcamdlab" className="self-start">Computer Aided Engineering Graphics / Computer Aided Machine Drawing : </label>
-                <select
-                    className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="caegcamdlab"
-                    onChange={changeHandler}
-                    value={formdata.caegcamdlab}
-                    id="caegcamdlab"
-                    required
-                >
-                    <option value="">Open this select menu</option>
-                    <option value="A++">A++</option>
-                    <option value="A+">A+</option>
-                    <option value="A">A</option>
-                    <option value="B+">B+</option>
-                    <option value="B">B</option>
-                    <option value="C+">C+</option>
-                    <option value="C">C</option>
-                    <option value="D+">D+</option>
-                    <option value="D">D</option>
-                    <option value="E+">E+</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                </select>
-
-                <label htmlFor="deca" className="self-start">DECA : </label>
+                <label htmlFor="deca" className="self-start">DECA </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
                     name="deca"
@@ -353,6 +245,10 @@ const First = () => {
                     <option value="E">E</option>
                     <option value="F">F</option>
                 </select>
+
+
+
+                
 
                 <button className='p-3 bg-[#3a304a] self-center rounded-md hover:bg-[#292136] text-white'>Submit</button>
 

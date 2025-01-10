@@ -77,8 +77,10 @@ const Fifth = () => {
 
             var sgpa = totalGradePoints / totalCreditHours;
 
+            var finalsgpa = Number(sgpa.toFixed(2));
 
-            setSgpa(sgpa);
+
+            setSgpa(finalsgpa);
 
            
     }

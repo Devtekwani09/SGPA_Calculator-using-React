@@ -24,7 +24,8 @@ function App() {
         <Route path='/ai/fourth' element={<Fourth />} />
         <Route path='/ai/fifth' element={<Fifth />} />
         <Route path='/ai/sixth' element={<Sixth />} />
-        {/* <Route path='/ai/seventh' element={<Seven />} /> */}
+        <Route path='/ai/seventh' element={<Seven />} />
+        <Route path='/ai/Eight' element={<Seven />} />
       </Routes>
 
       <Footer />

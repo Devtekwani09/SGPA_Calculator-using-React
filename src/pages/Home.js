@@ -8,8 +8,8 @@ const Home = () => {
 
         <div className='bg-[#2C2E3A] h-fit w-[60vw] mb-10 rounded-md p-4 text-white'>
             <p>
-            We're excited to introduce our new SGPA (Semester Grade Point Average) calculator tailored for students in the fields of Artificial Intelligence (AI) and Data Science (DS).This tool streamlines the process of calculating SGPA, providing students with a quick and accurate assessment of their academic performance. <br/><br/>
-            While currently available exclusively for AI and DS branches, we're committed to expanding its reach to include more branches in the near future. <br/> <br/>
+            We're excited to introduce our new SGPA (Semester Grade Point Average) calculator tailored for students in the fields of Computer Sciences and Cs related feilds like AI / AI-DS / DS .This tool streamlines the process of calculating SGPA, providing students with a quick and accurate assessment of their academic performance. <br/><br/>
+            While currently available exclusively for Computer Sciences and related branches like AI / AI-DS / DS, we're committed to expanding its reach to include more branches in the near future. <br/> <br/>
             Stay tuned for updates as we work to enhance accessibility and utility for all students.
             </p>
         </div>
@@ -24,7 +24,7 @@ const Home = () => {
             
             <Link to="/ai">
             <div className="w-[25vw] h-10  text-white rounded-md m-4 p-2 bg-[#09154d] hover:bg-[#050A44] text-center">
-                AI
+                CS / AI / AI-DS / DS
             </div>
             </Link>
 

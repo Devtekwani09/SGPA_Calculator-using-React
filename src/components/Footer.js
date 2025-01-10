@@ -2,6 +2,7 @@ import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { SiLinktree } from "react-icons/si";
+import { TfiWorld } from "react-icons/tfi";
 
 const Footer = () => {
   return (
@@ -25,10 +26,16 @@ const Footer = () => {
             </a>
           </li>
           <li>
+            <a href="https://portfolio-dev-tekwani.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <TfiWorld />
+            </a>
+          </li>
+          <li>
             <a href="https://linktr.ee/dev_09" target="_blank" rel="noopener noreferrer">
               <SiLinktree />
             </a>
           </li>
+          
           
         </ul>
       </div>
