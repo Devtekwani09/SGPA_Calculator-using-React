@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const First = () => {
+const Eight = () => {
     const [formdata, setFormData] = useState({dla: "", eedm : "", dlalab:"", cvlab:"", its: "", deca: ""});
 
     // Function to handle changes in the select dropdown
@@ -97,7 +97,7 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="eedm" className="self-start">Environmental Engineering and Disaster Management </label>
+                <label htmlFor="eedm" className="self-start">Open Elective </label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
                     name="eedm"
@@ -235,4 +235,4 @@ const First = () => {
     );
 }
 
-export default First;
+export default Eight;
