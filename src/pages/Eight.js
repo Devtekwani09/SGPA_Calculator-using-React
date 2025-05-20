@@ -36,7 +36,7 @@ const Eight = () => {
                 'subject2': 3.0,
                 'subject3': 1.0,
                 'subject4': 1.0,
-                'subject5': 7.5,
+                'subject5': 7.0,
                 'subject6': 0.5,
                 
             };
