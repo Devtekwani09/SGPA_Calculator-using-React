@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const First = () => {
-    const [formdata, setFormData] = useState({dla: "", eedm : "", dlalab:"", cvlab:"", its: "", ts:"", deca: ""});
+    const [formdata, setFormData] = useState({dla: "", eedm : "", dlalab:"", cvlab:"", its: "", deca: ""});
 
     // Function to handle changes in the select dropdown
     const changeHandler = (event) => {
@@ -34,11 +34,10 @@ const First = () => {
             var creditHours = {
                 'subject1': 3.0,
                 'subject2': 3.0,
-                'subject3': 2.0,
-                'subject4': 2.0,
-                'subject5': 2.5,
-                'subject6': 2.0,
-                'subject7': 0.5,
+                'subject3': 1.0,
+                'subject4': 1.0,
+                'subject5': 7.5,
+                'subject6': 0.5,
                 
             };
 
@@ -47,8 +46,7 @@ const First = () => {
             var subject3Grade = gradeMap[formdata.dlalab];
             var subject4Grade = gradeMap[formdata.cvlab];
             var subject5Grade = gradeMap[formdata.its];
-            var subject6Grade = gradeMap[formdata.ts];
-            var subject7Grade = gradeMap[formdata.deca];
+            var subject6Grade = gradeMap[formdata.deca];
 
             
 
@@ -57,10 +55,9 @@ const First = () => {
                                    subject3Grade * creditHours['subject3'] +
                                    subject4Grade * creditHours['subject4'] +
                                    subject5Grade * creditHours['subject5'] +
-                                   subject6Grade * creditHours['subject6'] +
-                                   subject7Grade * creditHours['subject7'] ;
+                                   subject6Grade * creditHours['subject6'] ;
 
-            var totalCreditHours = creditHours['subject1'] + creditHours['subject2'] + creditHours['subject3'] + creditHours['subject4'] + creditHours['subject5'] + creditHours['subject6'] + creditHours['subject7'];
+            var totalCreditHours = creditHours['subject1'] + creditHours['subject2'] + creditHours['subject3'] + creditHours['subject4'] + creditHours['subject5'] +  creditHours['subject6'];
 
             var sgpa = totalGradePoints / totalCreditHours;
             var finalsgpa = Number(sgpa.toFixed(2));
@@ -73,7 +70,7 @@ const First = () => {
 
     return (
         <div className="flex flex-col justify-center items-center ">
-        <h1 className='text-lg font-bold text-white'> Semester - 7 </h1>
+        <h1 className='text-lg font-bold text-white'> Semester - 8 </h1>
         <div>
             <form className="flex flex-col w-full max-w-md p-5 bg-[#972fff] mt-3 gap-2 rounded-md" onSubmit={submitHandler}>
                 <label htmlFor="dla" className="self-start">Deep Learning and Its Applications / Big Data Analytics / IOT </label>
@@ -174,37 +171,13 @@ const First = () => {
                     <option value="F">F</option>
                 </select>
 
-                <label htmlFor="its" className="self-start">Industrial Training </label>
+                <label htmlFor="its" className="self-start">Project</label>
                 <select
                     className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
                     name="its"
                     onChange={changeHandler}
                     value={formdata.its}
                     id="its"
-                    required
-                >
-                    <option value="">Open this select menu</option>
-                    <option value="A++">A++</option>
-                    <option value="A+">A+</option>
-                    <option value="A">A</option>
-                    <option value="B+">B+</option>
-                    <option value="B">B</option>
-                    <option value="C+">C+</option>
-                    <option value="C">C</option>
-                    <option value="D+">D+</option>
-                    <option value="D">D</option>
-                    <option value="E+">E+</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                </select>
-
-                <label htmlFor="ts" className="self-start">Seminar </label>
-                <select
-                    className="border rounded-md w-[100] h-8 p-1 hover:shadow-lg"
-                    name="ts"
-                    onChange={changeHandler}
-                    value={formdata.ts}
-                    id="ts"
                     required
                 >
                     <option value="">Open this select menu</option>
